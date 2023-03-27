@@ -1,0 +1,28 @@
+{% extends 'login/base.html' %}
+<!--  -->
+{% block content %}
+<div>
+  <p class="UserTitle">User Details</p>
+  <div class="PersonDetailsParent">
+    <div class="PersonDetails">
+      <table>
+        <tr>
+          <td><p class="usr">User Name:</p></td>
+          <td>{{userData.name}}</td>
+        </tr>
+        <tr>
+          <td><p>Mobile Number:</p></td>
+          <td>{{userData.telephone}}</td>
+        </tr>
+        <tr>
+          <td><p>Email Id</p></td>
+          <td>{{userData.email}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <button id="btn">Test</button>
+</div>
+
+{% endblock%}

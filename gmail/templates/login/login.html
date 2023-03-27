@@ -1,0 +1,30 @@
+{% extends 'login/base.html' %}
+<!--  -->
+{% block content %}
+<p class="LoginTitle">Login</p>
+<form method="POST">
+  {% csrf_token %}
+  <table>
+    <tr>
+      <td>Email id</td>
+      <td>
+        <input type="text" name="email" placeholder="Enter Email" />
+      </td>
+    </tr>
+    <tr>
+      <td>Password</td>
+      <td>
+        <input type="password" name="password" placeholder="Enter password" />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <div class="buttonSubmit">
+          <button type="submit" class="submit">Submit</button>
+        </div>
+      </td>
+    </tr>
+  </table>
+</form>
+<!--  -->
+{% endblock %}
